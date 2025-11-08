@@ -1,0 +1,103 @@
+.thread-container {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-back {
+  background: none;
+  border: none;
+  color: #667eea;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.thread-header {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 1.5rem;
+}
+
+.thread-header h2 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.thread-header p {
+  margin: 0;
+  color: #666;
+}
+
+.messages-container {
+  min-height: 300px;
+  max-height: 500px;
+  overflow-y: auto;
+  padding: 1rem 0;
+  margin-bottom: 1.5rem;
+}
+
+.message {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 4px;
+  animation: slideIn 0.3s ease;
+}
+
+.message.sent {
+  background: #e7f3ff;
+  margin-left: 2rem;
+}
+
+.message.received {
+  background: #f0f0f0;
+  margin-right: 2rem;
+}
+
+.message strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.message p {
+  margin: 0 0 0.5rem 0;
+  color: #666;
+}
+
+.message small {
+  color: #999;
+  font-size: 0.85rem;
+}
+
+.no-messages {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #999;
+}
+
+.message-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.message-form textarea {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

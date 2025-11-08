@@ -1,0 +1,66 @@
+.list-container {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.list-controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.search-input,
+.filter-select {
+  flex: 1;
+  min-width: 200px;
+}
+
+.notices-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.no-data {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #999;
+  font-size: 1.1rem;
+}
+
+.communications-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.comm-item {
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-left: 3px solid #667eea;
+}
+
+.comm-item:hover {
+  background: #f0f0f0;
+  transform: translateX(5px);
+}
+
+.comm-item h4 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.comm-item p {
+  margin: 0 0 0.5rem 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.comm-item small {
+  color: #999;
+  font-size: 0.85rem;
+}
